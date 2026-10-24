@@ -77,17 +77,26 @@ else
 //Nested if
 
 let age = 25
+let citizen = "Indian"
 let hasVoterID = false
+
 
 if(age>=18)
 {
-    if(hasVoterID)
+    if(citizen === "Indian")
     {
+        if(hasVoterID)
+        {
         console.log("Able to Vote")
+        }
+        else
+        {
+        console.log("Not able to vote")
+        }
     }
     else
     {
-        console.log("Not able to vote")
+        console.log("Indians only able to vote")
     }
 }
 else

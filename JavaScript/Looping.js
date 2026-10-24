@@ -80,3 +80,76 @@ floor++ //3
 
 floor-- //2
 
+for(let i = 1; i<=100; i++)
+{
+    console.log("Notifaction sent to user: " + i)
+}    
+
+//When you know the Iteration count==> for 
+
+//while loop
+
+// let i = 1 //Global Declaration
+
+// while(i<=5)
+// {
+//     console.log(i)
+//     i++
+// }
+
+//while loop ==> when you don't know the iteration count, it mainly based on condition
+
+// for(; i<=5; i++)
+// {
+//     console.log(i)
+// }
+
+let password = ""
+
+while(password !== "1234")
+{
+    password = "1234"
+    console.log("Hi")
+}
+
+console.log("Login Successful")
+
+//do...while loop ==> must execute at least once without checking the condition
+
+let i = 6
+
+do
+{
+    console.log(i)
+    i++
+}while(i<=5)
+
+//eventhougth the condition fails initially, the code excute atleast once
+
+//npm install prompt-sync ==> package for get the user input
+
+const prompt = require("prompt-sync")()
+
+let pin;
+let attempt = 0
+
+do
+{
+    pin = prompt("Enter Pin: ") 
+    attempt++                             // pin = "1111" 
+}while(pin !== "1234" && attempt<3) 
+
+if(pin === "1234")
+{
+    console.log("Account Opened")
+}
+else
+{
+    console.log("Card Blocked")
+}
+
+
+
+//for loop --> When you know the iteration count 
+//while loop --> When you don't know the iteration count, based only on condition
+//do-while --> used to execute atleast once before checking the condition
