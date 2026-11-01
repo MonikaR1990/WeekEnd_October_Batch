@@ -78,6 +78,9 @@ function greetings(message)
     return message
 }
 
+const message = greetings("WELCOME")
+console.log(message)
+
 console.log(greetings("Good Morning"))  //string value return back
 
 

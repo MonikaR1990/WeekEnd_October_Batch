@@ -5,6 +5,9 @@
 
 //Polymorphism two types
 //1. Method Overloading (not in javascrip) (Compile Time Polymorphism)
+
+    //When a child class provides its own implementation of a method that is already defined in the parent class
+
 //2. Method Overriding (Run Time Polymorphism)
 
 class Animal
@@ -99,3 +102,4 @@ console.log(fd.calculateInterest(10000))
 
 // let a1 = new Addtion()
 // a1.add(3, 4)
+
