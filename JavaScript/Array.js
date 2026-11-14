@@ -239,3 +239,4 @@ let [m1, m2, m3, ...m4] = myArray
 console.log(m4)
 
 //It collects the remining values and store them into a variable (array)
+
